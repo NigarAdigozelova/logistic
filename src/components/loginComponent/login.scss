@@ -1,0 +1,38 @@
+.login {
+    padding: 40px 60px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .inputs {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      gap: 20px;
+      input {
+        border-radius: 10px;
+        background: #f6f7f9;
+        padding: 10px 30px;
+        border: none;
+        &::placeholder {
+          color: black;
+        }
+      }
+    }
+    button{
+        border-radius: 10px;
+        background: #f6f7f9;
+        padding: 10px 30px;
+        background-color: #1565C0;
+        border: none;
+        color: white;
+    }
+    span{
+        font-size: 12px;
+        display: flex;
+        justify-content: flex-end;
+    }
+  }
+}

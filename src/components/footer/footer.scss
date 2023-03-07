@@ -1,0 +1,113 @@
+.footer {
+  padding-bottom: 0 !important;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(203.23deg, #09306d 0.17%, #2196f3 168.67%);
+  .left-footer {
+    .left-top {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .logo-footer {
+      }
+      .left-bottom {
+        ul {
+          margin-top: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 15px;
+          li {
+            list-style: none;
+            a {
+              text-decoration: none;
+
+              img {
+              }
+            }
+          }
+        }
+      }
+    }
+    .securty {
+      margin-top: 80px;
+      color: white;
+      font-size: 12px;
+    }
+  }
+  .mid-footer {
+    ul {
+        margin-top: 13px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      li {
+        list-style: none;
+        width: 300px;
+        font-weight: 200;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+  .right-footer{
+    .apple{
+        img{
+            margin: 10px 0;
+            width: 200px;
+        }
+    }
+    .store{
+        img{
+            width: 200px;
+        }
+    }
+  }
+}
+@media only screen and (max-width: 991.98px) {
+  .footer{
+    display: flex;
+    justify-content: center;
+    .left-footer{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      margin-left: 40%;
+
+      .logo-footer{
+        display: none;
+      }
+      .left-bottom{
+        // margin-top:200px;
+        margin-left: -300px;
+
+      }
+      .securty{
+        margin-left: -250px;
+
+      }
+     
+    }
+   
+    .mid-footer{
+      display: none;
+    }
+    .right-footer{
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-left: -50%;
+      margin-top: 20px;
+      .mobil{
+        display: none;
+      }
+      .bcp{
+        display: none;
+      }
+    }
+    
+    
+  }
+}

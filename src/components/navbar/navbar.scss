@@ -1,0 +1,134 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(208.67deg, #09306d 24.16%, #2196f3 100%);
+  .left-nav {
+    .img-div {
+      width: 171px;
+      height: 54px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .right-nav {
+    ul {
+      display: flex;
+      align-items: center;
+
+      gap: 40px;
+      li {
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: white;
+          font-weight: 500;
+          letter-spacing: 1.2px;
+          &:hover {
+            color: #f79824;
+          }
+        }
+        button {
+          .register {
+            color: #09306d;
+            font-weight: 900;
+            box-shadow: none;
+            width: 200px;
+            
+            &:hover {
+              color: #f79824;
+            }
+          }
+        }
+      }
+    }
+    .menu {
+      display: none;
+     
+    }
+    .burger-menu-items{
+        display: none;
+      }
+  }
+}
+@media only screen and (max-width: 991.98px) {
+  .right-nav {
+    ul{
+      margin-left:-40px;
+      li{
+      button{
+        a{
+          padding:10px 0;
+        }
+      }
+
+      }
+
+    }
+    .n {
+      display: none !important;
+    }
+    .menu {
+        display: block !important;
+        background: none;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .burger-menu {
+        padding: 50px 0 0 15px;
+        width: 250px;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        transform: translateX(250px);
+        -webkit-transform: translateX(-250px);
+        background-color: #223aa8 !important;
+        transition: 0.5s ease-in-out;
+        display: block;
+        .delete{
+          button{
+            border: none;
+            border-radius: 50% !important;
+            font-weight: 900;
+
+           
+          }
+        }
+       
+        .burger-menu-items {
+          list-style: none;
+          display: flex;
+          flex-direction: column !important;
+          gap: 30px;
+          justify-content: center;
+          
+    
+          li {
+            list-style: none;
+            a {
+              
+              text-decoration: none;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+  }
+  
+  .burger-menu {
+    display: none;
+   
+  }
+}
