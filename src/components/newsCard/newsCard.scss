@@ -1,0 +1,41 @@
+.newsCard {
+    padding-bottom: 50px;
+  .newsCard-title {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 5px 0;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+ 
+  
+  }
+  .more{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    button{
+        border: 1px solid #F79824;
+        padding: 10px 20px;
+        background-color: #fff;
+        border-radius: 24px;
+        a{
+            text-decoration:none ;
+            color:#F79824;
+        }
+    }
+
+  }
+}
+@media only screen and (max-width: 991.98px) {
+    .newsCard-title{
+        text-align: center;
+    } 
+    .wrapper{
+        max-width: 387px;
+        margin: 0 auto; 
+    }
+}

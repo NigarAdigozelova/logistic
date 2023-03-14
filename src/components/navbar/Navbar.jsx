@@ -13,9 +13,12 @@ const Navbar = () => {
             </div>
             <div className='right-nav'>
                 <ul className='n'>
+                    <li> <Link to="/news">Xəbərlər</Link></li>
                     <li> <Link to="/about">Ziyarətci girişi</Link></li>
                     <li><button style={{ padding: "7px", borderRadius: "34px", border: "none" }}><Link to="/register" className='register'>Qeydiyyatdan keç</Link></button> </li>
                     <li> <Link to="/language">AZ|ENG</Link></li>
+
+
                 </ul>
                 <button className='menu' onClick={() => {
                     menu ? setMenu(false) : setMenu(true);
@@ -32,8 +35,9 @@ const Navbar = () => {
                     </div>
 
                     <ul className='burger-menu-items'>
-                        <li><button style={{ borderRadius:"34px",border:"none", textAlign: "center", padding: "7px"}}><Link to="/register" className='register' style={{ fontSize: "16px" }}>Qeydiyyatdan keç</Link></button> </li>
+                        <li><button style={{ borderRadius: "34px", border: "none", textAlign: "center", padding: "7px" }}><Link to="/register" className='register' style={{ fontSize: "16px" }}>Qeydiyyatdan keç</Link></button> </li>
                         <li> <Link to="/about">Ziyarətci girişi</Link></li>
+                        <li> <Link to="/news">Xəbərlər</Link></li>
                         <li> <Link to="/language">AZ|ENG</Link></li>
                     </ul>
 

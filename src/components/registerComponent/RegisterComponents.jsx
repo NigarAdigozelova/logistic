@@ -1,5 +1,7 @@
 import React from 'react'
 import { Controller, useForm } from 'react-hook-form';
+import { useDispatch } from 'react-redux';
+import { submitForm } from '../../reducers/loginSlice';
 import "./registerComponent.scss"
 
 const RegisterComponents = () => {
@@ -12,7 +14,9 @@ const RegisterComponents = () => {
       
     }
   });
+  const dispatch = useDispatch()
   const onSubmit = data => {
+    dispatch(submitForm(data))
     reset({ phoneNum: "" })
 
     console.log(data)
@@ -23,11 +27,11 @@ const RegisterComponents = () => {
       <form onSubmit={handleSubmit(onSubmit)} className='registerForm' action="">
         <div className='registerInput'>
 
-          <Controller
+          <Controller 
             name="select"
             control={control}
             render={({ field }) =>
-              <select {...field} >
+              <select {...field} style={{borderRadius:"10px",border:"none",backgroundColor:"#f6f7f9"}} >
                  <option value="+994">+994</option>
                 <option value="+1">+1</option>
                 <option value="+372">+372</option>

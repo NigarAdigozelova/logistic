@@ -1,7 +1,9 @@
 import MainRoot from "../components/MainRoot";
 import About from "../pages/About";
+import Detail from "../pages/Detail";
 import Home from "../pages/Home";
 import Language from "../pages/Language";
+import News from "../pages/News";
 import RegisterPage from "../pages/RegisterPage";
 
 const ROUTES=[
@@ -25,6 +27,15 @@ const ROUTES=[
                 path:"language",
                 element:<Language/>
             },
+            {
+                path:"news",
+                element:<News/>
+            },
+            {
+                path:"detail",
+                element:<Detail/>
+            },
+
 
         ]
     }

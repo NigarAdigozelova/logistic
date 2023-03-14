@@ -54,3 +54,16 @@ margin-top: 20px;
   }
   
 }
+@media only screen and (max-width: 991.98px) {
+  .registerr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .left-register {
+      width: 100%;
+    }
+    .left-register {
+    }
+  }
+}
